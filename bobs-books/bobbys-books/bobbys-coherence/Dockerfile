@@ -26,6 +26,7 @@ RUN set -eux \
     rm -f jdk.tar.gz;
 
 COPY target/*.jar /app/lib/
+COPY target/*.jar /app/libs/
 COPY src/main/resources/bobbys-cache-config.xml /app/conf/
 COPY src/main/resources/bobbys-pof-config.xml /app/conf/
 COPY src/main/resources/books.csv /app/conf/
